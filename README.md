@@ -17,7 +17,7 @@ To install and run the Multi-Language Sticker Generator locally, follow these st
 
 1. Clone the repository:
    ```shell
-   git clone https://github.com/example/repository.git
+   git clone https://github.com/dastankoich/sticker-generator.git
 
 3. Navigate to the project directory:
 4. Install the dependencies:
