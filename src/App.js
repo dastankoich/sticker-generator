@@ -19,8 +19,8 @@ const App = () => {
   const [open, setOpen] = useState(false);
   const [collapse, setCollapse] = useState(false);
   const [translatedText, setTranslatedText] = useState([]);
-  const [x, setX] = useState(300);
-  const [y, setY] = useState(300);
+  const [x, setX] = useState(200);
+  const [y, setY] = useState(200);
 
   const canvasRef = useRef([]);
 
@@ -84,10 +84,12 @@ const App = () => {
     e.preventDefault();
     setSize(size + 1);
   };
+
   const decrementSize = (e) => {
     e.preventDefault();
     setSize(size - 1);
   };
+
   const handleFont = (e) => {
     e.preventDefault();
     setFont(e.target.value);
@@ -145,6 +147,7 @@ const App = () => {
                 <input
                   style={{ minWidth: "300px" }}
                   type="text"
+                  value={text}
                   className="form-control"
                   placeholder={"Input your text"}
                   onChange={(e) => {
@@ -185,7 +188,6 @@ const App = () => {
                       ></button>
                     )}
                   </div>
-
                   <Stage width={400} height={400}>
                     <Layer>
                       <SetImage />
@@ -193,7 +195,6 @@ const App = () => {
                     </Layer>
                   </Stage>
                 </div>
-
                 <div className="config my-3 m-2">
                   <div className="input-group mb-3">
                     {text && (
@@ -290,6 +291,7 @@ const App = () => {
         <div className="album py-5 bg-body-tertiary">
           <div className="d-flex flex-wrap justify-content-center">
             {translatedText &&
+              selectedImage &&
               translatedText?.map((el, i) => (
                 <div className="m-2 " key={i}>
                   <div className="card p-2 ">
