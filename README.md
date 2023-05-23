@@ -21,7 +21,9 @@ To install and run the Multi-Language Sticker Generator locally, follow these st
 
 3. Navigate to the project directory:
 4. Install the dependencies:
- ```npm install ```
+    ```
+    npm install
+    ```
 
 5. Set up the Azure Translator service:
 - Sign up for an Azure account if you don't have one.
@@ -40,9 +42,9 @@ To install and run the Multi-Language Sticker Generator locally, follow these st
 ## Getting Started
 
 To start the Multi-Language Sticker Generator, use the following command:
-```shell
-npm start
-```
+   ```shell
+   npm start
+   ```
 
 ## Usage
 1. Open the application in your web browser by navigating to `http://localhost:3000`.
